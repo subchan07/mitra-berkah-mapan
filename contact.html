@@ -239,14 +239,6 @@
 
           <div class="google-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.659647909943!2d112.7017356752602!3d-7.502774592509702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e0af9045b8c9%3A0x91d8182e0b65448c!2sPT.%20MITRA%20BERKAH%20MAPAN!5e0!3m2!1sen!2sid!4v1703648024379!5m2!1sen!2sid" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!-- <div
-              id="map"
-              class="map"
-              data-latitude="-7.502774592509702"
-              data-longitude="112.7017356752602"
-              data-marker="images/marker.png"
-              data-marker-name="Constra"
-            ></div> -->
           </div>
 
           <div class="gap-40"></div>
@@ -254,8 +246,6 @@
           <div class="row">
             <div class="col-md-12">
               <h3 class="column-title">We love to hear</h3>
-              <!-- contact form works with formspree.io  -->
-              <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
               <form id="contact-form" action="#" method="post" role="form">
                 <div class="error-container"></div>
                 <div class="row">
@@ -287,16 +277,27 @@
                   </div>
                   <div class="col-md-4">
                     <div class="form-group">
-                      <label>Subject</label>
+                      <label>Phone</label>
                       <input
-                        class="form-control form-control-subject"
-                        name="subject"
-                        id="subject"
+                        class="form-control form-control-phone"
+                        name="phone"
+                        id="phone"
                         placeholder=""
+                        type="number"
                         required
                       />
                     </div>
                   </div>
+                </div>
+                <div class="form-group">
+                  <label>Subject</label>
+                  <input
+                    class="form-control form-control-subject"
+                    name="subject"
+                    id="subject"
+                    placeholder=""
+                    required
+                  />
                 </div>
                 <div class="form-group">
                   <label>Message</label>
