@@ -7,9 +7,15 @@ Description: Constra - Construction Html5 Template
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap);
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Teko:wght@300;400;500;600;700&display=swap");
 /* Typography
 ================================================== */
+:root {
+  --color-primary: #ffb600;
+  --color-paragraph: #1B1B1B;
+}
+
 body {
   background: #fff;
   color: #555;
@@ -602,7 +608,7 @@ a[href^="tel"] {
 ================================================== */
 .top-bar {
   padding: 8px 0;
-  background: #ebebeb;
+  background: var(--color-primary);
   position: relative;
 }
 
@@ -1277,7 +1283,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .banner-carousel .banner-carousel-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3072,6 +3078,40 @@ img.testimonial-thumb {
   z-index: 1;
 }
 
+.contact-info-section {
+  padding: 30px;
+  background-color: #191919;
+  color: #fff;
+}
+
+.contact-info-section .contact-info-content {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-section .contact-info-content:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info-section .contact-info-content h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info-section .contact-info-content ul.list-unstyled {
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+.contact-info-section .contact-info-content p a,
+.contact-info-section .contact-info-content p {
+  color: #fff;
+  word-break: normal;
+  margin-bottom: 5px;
+}
+
+.contact-info-section .contact-info-content a:hover {
+  color: #ffb600;
+}
+
 .contact-info-box {
   margin-top: 20px;
 }
@@ -3594,3 +3634,171 @@ label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Animated Line */
+.animate_line {
+  position: relative;
+  z-index: 0;
+  /* padding: 15px 15px; */
+  margin: 1rem 0;
+}
+
+.animate_line:after,
+.animate_line:before {
+  content: "";
+  height: 4px;
+  width: 0px;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.animate_line:after {
+  left: -0.7rem;
+  bottom: -0.7rem;
+}
+
+.animate_line:before {
+  right: -0.7rem;
+  top: -0.7rem;
+}
+
+.animate_line:hover:after,
+.animate_line:hover:before {
+  width: 50%;
+  height: 50%;
+  background: #ffb600;
+}
+
+.service-box-1-new {
+  position: relative;
+  padding: 30px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+.wt-box,
+.wt-info,
+.wt-tilte,
+.wt-tilte-inner {
+  position: relative;
+}
+
+.wt-box {
+  position: relative;
+}
+
+.rounded-bx,
+.wt-box,
+.wt-icon-box,
+.wt-icon-box-small,
+.wt-thum-bx,
+.wt-post-thum {
+  position: relative;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.wt-icon-box-wraper-new {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.wt-icon-number-new {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.wt-icon-number-new span {
+  font-size: 120px;
+  line-height: 100px;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  opacity: 0.5;
+  display: block;
+  font-family: "Teko", sans-serif;
+}
+
+.icon-xl.inline-icon {
+  width: auto;
+  text-align: left !important;
+}
+
+.icon-xl {
+  line-height: 80px;
+}
+
+.icon-xld,
+.icon-xl,
+.icon-lg,
+.icon-md,
+.icon-sm,
+.icon-xs {
+  display: inline-block;
+  text-align: center;
+}
+
+.site-text-secondry,
+.post-title a,
+h2,
+a,
+.site-list-style-one-new li {
+  color: #191919;
+}
+
+.service-box-title-new {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.service-box-title-new span {
+  font-size: 30px;
+  display: block;
+  text-align: left;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.service-box-content-new {
+  margin-bottom: 30px;
+  /* border-bottom: 1px solid #ddd; */
+  /* padding-bottom: 30px */
+}
+
+.service-box-content-new p {
+  margin-bottom: 0;
+}
+
+.title-style-2 {
+  font-family: "Teko", sans-serif;
+}
+
+.site-button-link {
+  position: relative;
+}
+
+.site-button-link:before {
+  position: absolute;
+  content: "\f178";
+  font-family: "FontAwesome";
+  left: 50%;
+  top: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.site-button-link:hover:before {
+  left: 110%;
+  opacity: 1;
+}
